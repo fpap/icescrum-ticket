@@ -1,0 +1,19 @@
+<h4>Para acceder debe indicar su usuario y su contraseña.</h4>
+<hr>
+<form class="form-horizontal">
+	<div class="form-group">
+		<label for="inputEmail1" class="col-lg-2 control-label">Usuario</label>
+		<div class="col-lg-10">
+			<input class="form-control login" ng-model="user" placeholder="Usuario"
+				type="text">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputPassword1" class="col-lg-2 control-label">Contraseña</label>
+		<div class="col-lg-10">
+			<input class="form-control login" ng-model="password"
+				placeholder="Contraseña" type="password">
+		</div>
+	</div>
+	<button ng-click="doLogin()" class="btn btn-primary" type="button">Ingresar</button>
+</form>

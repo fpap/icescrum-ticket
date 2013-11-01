@@ -1,0 +1,28 @@
+<div>
+	<h4>Nuevo ticket</h4>
+	
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label for="inputName" class="col-lg-2 control-label">Nombre</label>
+			<div class="col-lg-10">
+				<input class="form-control name" ng-model="name" placeholder="Nombre"
+					type="text">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="inputCriticity" class="col-lg-2 control-label">Criticidad</label>
+			<div class="col-lg-10">
+				<input class="form-control criticity" ng-model="criticity" placeholder="Criticidad"
+					type="text">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="inputDescription" class="col-lg-2 control-label">Descripción</label>
+			<div class="col-lg-10">
+				<textarea class="form-control description" ng-model="description"
+					placeholder="Descripción" rows="10" cols="50"></textarea>
+			</div>
+		</div>
+		<button ng-click="createTicket()" class="btn btn-primary" type="button">Aceptar</button>
+	</form>
+</div>
