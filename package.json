@@ -1,11 +1,15 @@
 {
-  "name": "angualrjs-seed",
-  "description": "A starter project for angular js",
+  "name": "icescrum-ticket",
+  "description": "A defect tracking application",
   "devDependencies": {
         "phantomjs" : "*",
         "karma" : "*",
         "karma-junit-reporter" : "*",    
         "karma-jasmine" : "*",
-        "karma-ng-scenario" : "*"
-    }
+        "karma-ng-scenario" : "*"        
+    },
+  "dependencies": {
+        "express": "*",
+        "icescrum" : "*"
+  }
 }
