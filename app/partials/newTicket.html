@@ -23,6 +23,11 @@
 					placeholder="Descripción" rows="10" cols="50"></textarea>
 			</div>
 		</div>
+<input type="text" class="sfTypeahead" datasets="exampleData" ng-model="foo">{{ foo }}
+<input ng-twitter-typeahead type="text" ng-model="participant" data="exampleData" />
+{{ participant }}
+    <pre>Model: {{selected| json}}</pre>
+    <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8">
 		<button ng-click="createTicket()" class="btn btn-primary" type="button">Aceptar</button>
 	</form>
 </div>
