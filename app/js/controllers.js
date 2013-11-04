@@ -32,9 +32,12 @@ angular.module('myApp.controllers', []).controller('MyCtrl1', [ function() {
         }, 'json');
     };
     
- // single dataset
-    $('input').typeahead({
-      name: 'accounts',
-      local: ['timtrueman', 'JakeHarding', 'vskarich']
-    });
+    $scope.exampleData = {
+            name: 'accounts',
+            local: ['timtrueman', 'JakeHarding', 'vskarich']
+          };
+    
+    $scope.states = ['Alabama', 'Alaska','California', 'Hawaii',  'Wisconsin', 'Wyoming'];
+    
+
 } ]);
